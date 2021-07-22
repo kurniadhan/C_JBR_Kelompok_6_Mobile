@@ -1,15 +1,15 @@
 package com.example.si_kemas.Model;
 
-public class TkkModel {
+public class DetailModel {
     private Integer id;
     private String judul_kegiatan;
     private String jenis;
     private String kategori;
-    private Integer prodi;
+    private String prodi;
     private String nama_pemateri;
     private String buka_registrasi;
     private String tutup_registrasi;
-    private String tgl_pelaksaan;
+    private String tgl_pelaksanaan;
     private String jam_mulai;
     private String jam_selesai;
     private String deskripsi;
@@ -50,11 +50,11 @@ public class TkkModel {
         this.kategori = kategori;
     }
 
-    public Integer getProdi() {
+    public String getProdi() {
         return prodi;
     }
 
-    public void setProdi(Integer prodi) {
+    public void setProdi(String prodi) {
         this.prodi = prodi;
     }
 
@@ -83,11 +83,11 @@ public class TkkModel {
     }
 
     public String getTgl_pelaksaan() {
-        return tgl_pelaksaan;
+        return tgl_pelaksanaan;
     }
 
     public void setTgl_pelaksaan(String tgl_pelaksaan) {
-        this.tgl_pelaksaan = tgl_pelaksaan;
+        this.tgl_pelaksanaan = tgl_pelaksaan;
     }
 
     public String getJam_mulai() {

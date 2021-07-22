@@ -1,6 +1,7 @@
 package com.example.si_kemas.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,8 +10,10 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.si_kemas.DetailKegiatan;
 import com.example.si_kemas.Model.TkkModel;
 import com.example.si_kemas.R;
+import com.squareup.picasso.Picasso;
 
 
 import java.util.List;
@@ -37,7 +40,16 @@ public class TkkAdapter extends RecyclerView.Adapter<TkkAdapter.TkkViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull  TkkAdapter.TkkViewHolder holder, int position) {
-        holder.imgTkk.setImageResource(tkkList.get(position).getImage());
+        String url_img = tkkList.get(position).getNama_foto();
+        Picasso.get().load("http://192.168.1.21:8000/Landingpage/img/"+url_img).into(holder.imgTkk);
+        holder.imgTkk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(context, DetailKegiatan.class);
+                i.putExtra("id_kegiatan", tkkList.get(position).getId());
+                context.startActivity(i);
+            }
+        });
     }
 
     @Override
