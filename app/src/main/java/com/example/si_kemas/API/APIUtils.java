@@ -6,7 +6,7 @@ public class APIUtils {
 
     }
 
-    public static final String API_URL = "http://192.168.1.21:8000/";
+    public static final String API_URL = "http://192.168.239.59:8000/";
     public static APIRequestKegiatan getReqKegiatan(){
         return RetrofitClient.getClient(API_URL).create(APIRequestKegiatan.class);
     }

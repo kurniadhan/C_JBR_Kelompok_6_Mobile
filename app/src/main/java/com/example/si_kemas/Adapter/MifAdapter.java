@@ -40,7 +40,7 @@ public class MifAdapter extends RecyclerView.Adapter<MifAdapter.MifViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull  MifAdapter.MifViewHolder holder, int position) {
         String url_img = mifList.get(position).getNama_foto();
-        Picasso.get().load("http://192.168.1.21:8000/Landingpage/img/"+url_img).into(holder.imgMif);
+        Picasso.get().load("http://192.168.239.59:8000/frontend/img/"+url_img).into(holder.imgMif);
         holder.imgMif.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

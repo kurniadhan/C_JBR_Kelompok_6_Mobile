@@ -3,10 +3,10 @@ package com.example.si_kemas.Model;
 public class TifModel {
 
         private Integer id;
-        private String judul_kegiatan;
+        private String judul;
         private String jenis;
         private String kategori;
-        private Integer prodi;
+        private Integer id_prodi;
         private String nama_pemateri;
         private String buka_registrasi;
         private String tutup_registrasi;
@@ -28,11 +28,11 @@ public class TifModel {
     }
 
     public String getJudul_kegiatan() {
-        return judul_kegiatan;
+        return judul;
     }
 
     public void setJudul_kegiatan(String judul_kegiatan) {
-        this.judul_kegiatan = judul_kegiatan;
+        this.judul= judul_kegiatan;
     }
 
     public String getJenis() {
@@ -52,11 +52,11 @@ public class TifModel {
     }
 
     public Integer getProdi() {
-        return prodi;
+        return id_prodi;
     }
 
     public void setProdi(Integer prodi) {
-        this.prodi = prodi;
+        this.id_prodi = prodi;
     }
 
     public String getNama_pemateri() {

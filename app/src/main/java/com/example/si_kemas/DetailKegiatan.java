@@ -49,7 +49,7 @@ public class DetailKegiatan extends AppCompatActivity {
     private void setView(){
         List<DetailModel> item = dataDetail;
         String url_img = item.get(0).getNama_foto();
-        Picasso.get().load("http://192.168.1.21:8000/Landingpage/img/"+url_img).into(dtFoto);
+        Picasso.get().load("http://192.168.239.59:8000/frontend/img/"+url_img).into(dtFoto);
         dtJudulKegiatan.setText(item.get(0).getJudul_kegiatan());
         dtProdi.setText(item.get(0).getProdi());
         dtPemateri.setText(item.get(0).getNama_pemateri());

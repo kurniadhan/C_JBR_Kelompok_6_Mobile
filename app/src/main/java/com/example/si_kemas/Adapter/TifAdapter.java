@@ -39,7 +39,7 @@ public class TifAdapter extends RecyclerView.Adapter<TifAdapter.TifViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull  TifAdapter.TifViewHolder holder, int position) {
         String url_img = tifList.get(position).getNama_foto();
-        Picasso.get().load("http://192.168.1.21:8000/Landingpage/img/"+url_img).into(holder.imgTif);
+        Picasso.get().load("http://192.168.239.59:8000/frontend/img/"+url_img).into(holder.imgTif);
         holder.imgTif.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -30,7 +30,7 @@
                     android:layout_height="?attr/actionBarSize"
                     app:navigationIcon="@drawable/ic_menu"
                     app:title="SI-KEMAS"
-                    app:titleTextColor="@color/black"/>
+                    app:titleTextColor="@color/white"/>
 
             </com.google.android.material.appbar.AppBarLayout>
 

@@ -41,7 +41,7 @@ public class TkkAdapter extends RecyclerView.Adapter<TkkAdapter.TkkViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull  TkkAdapter.TkkViewHolder holder, int position) {
         String url_img = tkkList.get(position).getNama_foto();
-        Picasso.get().load("http://192.168.1.21:8000/Landingpage/img/"+url_img).into(holder.imgTkk);
+        Picasso.get().load("http://192.168.239.59:8000/frontend/img/"+url_img).into(holder.imgTkk);
         holder.imgTkk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
